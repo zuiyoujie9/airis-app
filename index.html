@@ -422,6 +422,269 @@
             line-height: 1.7;
         }
 
+        /* Core Features Grid */
+        .core-features-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .core-feature-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 35px;
+            transition: all 0.3s;
+        }
+
+        .core-feature-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,107,157,0.3);
+            transform: translateY(-5px);
+        }
+
+        .core-feature-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .core-feature-card h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .core-feature-card > p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            color: #aaa;
+            font-size: 14px;
+            border-top: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .feature-list li:first-child {
+            border-top: none;
+        }
+
+        .feature-list .check {
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+
+        /* Why Choose Us Section */
+        .why-section {
+            background: rgba(255,107,157,0.03);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .why-card {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .why-number {
+            font-size: 48px;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ff6b9d, #ff8a5c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+        }
+
+        .why-card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .why-card p {
+            color: #888;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        /* Product Showcase Section */
+        .showcase-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .showcase-phones {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 30px;
+        }
+
+        .showcase-phone {
+            text-align: center;
+        }
+
+        .showcase-phone .phone-frame {
+            width: 180px;
+            height: 360px;
+            background: linear-gradient(145deg, #1a1a2e, #16162a);
+            border-radius: 25px;
+            padding: 8px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .showcase-phone.featured .phone-frame {
+            width: 220px;
+            height: 440px;
+            box-shadow: 0 30px 60px rgba(255,107,157,0.2);
+        }
+
+        .phone-screen-demo {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #1e1e2e, #2d1f3d);
+            border-radius: 20px;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .demo-header {
+            text-align: center;
+            font-size: 14px;
+            color: #ff6b9d;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            margin-bottom: 15px;
+        }
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            flex: 1;
+        }
+
+        .demo-item {
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+
+        .demo-canvas {
+            flex: 1;
+            background: linear-gradient(135deg, rgba(255,107,157,0.2), rgba(255,138,92,0.2));
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .demo-input {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 12px;
+            color: #666;
+        }
+
+        .demo-chat {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .chat-bubble {
+            padding: 8px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            max-width: 80%;
+        }
+
+        .chat-bubble.user {
+            background: linear-gradient(135deg, #ff6b9d, #c44569);
+            align-self: flex-end;
+            color: white;
+        }
+
+        .chat-bubble.ai {
+            background: rgba(255,255,255,0.1);
+            align-self: flex-start;
+            color: #ccc;
+        }
+
+        .phone-label {
+            margin-top: 15px;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Coming Soon Section */
+        .coming-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .coming-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s;
+        }
+
+        .coming-card:hover {
+            background: rgba(255,255,255,0.06);
+            border-color: rgba(255,107,157,0.3);
+        }
+
+        .coming-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .coming-card h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .coming-card p {
+            color: #888;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
         /* About Section */
         .about-content {
             max-width: 800px;
@@ -579,6 +842,43 @@
                 gap: 20px;
                 text-align: center;
             }
+
+            .core-features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 20px;
+            }
+
+            .why-number {
+                font-size: 36px;
+            }
+
+            .showcase-phones {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .showcase-phone .phone-frame {
+                width: 160px;
+                height: 320px;
+            }
+
+            .showcase-phone.featured .phone-frame {
+                width: 200px;
+                height: 400px;
+            }
+
+            .coming-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+
+            .coming-card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -698,42 +998,164 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Core Features Section -->
     <section class="section" id="features">
         <div class="section-header">
-            <h2 class="section-title">强大的 <span class="highlight">AI功能</span></h2>
-            <p class="section-subtitle">多种AI创作工具，满足您的各种创意需求</p>
+            <h2 class="section-title">核心 <span class="highlight">功能</span></h2>
+            <p class="section-subtitle">四大核心AI能力，满足您的全方位创作需求</p>
         </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-card-icon icon-pink">🎨</div>
+        <div class="core-features-grid">
+            <div class="core-feature-card">
+                <div class="core-feature-icon icon-pink">🎨</div>
                 <h3>AI绘画</h3>
-                <p>输入文字描述，AI自动生成精美图片。支持多种艺术风格，从写实到动漫，从油画到水彩，一键生成专业级作品。</p>
+                <p>输入文字描述，AI自动生成精美图片。支持多种艺术风格，让创意变为现实。</p>
+                <ul class="feature-list">
+                    <li><span class="check">✓</span> 文字生成图片，描述即创作</li>
+                    <li><span class="check">✓</span> 多种艺术风格：写实、动漫、油画、水彩</li>
+                    <li><span class="check">✓</span> 高清图片输出，支持多种尺寸</li>
+                    <li><span class="check">✓</span> 智能优化提示词，提升生成质量</li>
+                </ul>
             </div>
-            <div class="feature-card">
-                <div class="feature-card-icon icon-purple">🎬</div>
+            <div class="core-feature-card">
+                <div class="core-feature-icon icon-purple">🎬</div>
                 <h3>AI视频生成</h3>
-                <p>文字转视频、图片转视频，让静态内容动起来。支持多种视频风格和时长，轻松创作短视频内容。</p>
+                <p>文字转视频、图片转视频，让静态内容动起来，轻松创作短视频内容。</p>
+                <ul class="feature-list">
+                    <li><span class="check">✓</span> 文字一键生成视频内容</li>
+                    <li><span class="check">✓</span> 图片转动态视频效果</li>
+                    <li><span class="check">✓</span> 数字人口播视频生成</li>
+                    <li><span class="check">✓</span> 多种视频风格和时长选择</li>
+                </ul>
             </div>
-            <div class="feature-card">
-                <div class="feature-card-icon icon-blue">💬</div>
+            <div class="core-feature-card">
+                <div class="core-feature-icon icon-blue">💬</div>
                 <h3>AI智能对话</h3>
-                <p>基于先进大语言模型的智能对话助手，支持多轮对话，解答问题、创意写作、代码生成等多种场景。</p>
+                <p>基于先进大语言模型的智能对话助手，支持多轮对话和多种应用场景。</p>
+                <ul class="feature-list">
+                    <li><span class="check">✓</span> 智能问答，解答各类问题</li>
+                    <li><span class="check">✓</span> 创意写作，文案生成助手</li>
+                    <li><span class="check">✓</span> 多轮对话，上下文理解</li>
+                    <li><span class="check">✓</span> 知识百科，学习好帮手</li>
+                </ul>
             </div>
-            <div class="feature-card">
-                <div class="feature-card-icon icon-orange">📷</div>
-                <h3>AI写真</h3>
-                <p>上传照片，AI生成各种风格的艺术写真。证件照、形象照、艺术照，一键生成专业效果。</p>
+            <div class="core-feature-card">
+                <div class="core-feature-icon icon-orange">📷</div>
+                <h3>更多AI工具</h3>
+                <p>丰富的AI图片处理工具，满足您的各种图片编辑和创作需求。</p>
+                <ul class="feature-list">
+                    <li><span class="check">✓</span> AI写真：多风格艺术照生成</li>
+                    <li><span class="check">✓</span> 风格迁移：照片艺术化处理</li>
+                    <li><span class="check">✓</span> 图片修复：老照片焕新</li>
+                    <li><span class="check">✓</span> 智能抠图：一键去除背景</li>
+                </ul>
             </div>
-            <div class="feature-card">
-                <div class="feature-card-icon icon-green">✨</div>
-                <h3>风格迁移</h3>
-                <p>将照片转换为各种艺术风格，梵高、莫奈、动漫、素描等多种风格任您选择。</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="section why-section">
+        <div class="section-header">
+            <h2 class="section-title">为什么选择 <span class="highlight">AIris</span></h2>
+            <p class="section-subtitle">四大优势，让AI创作更简单</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-number">01</div>
+                <h3>先进算法</h3>
+                <p>采用业界领先的AI大模型技术，持续优化算法，确保生成内容的质量和创意性，让每一次创作都令人惊艳。</p>
             </div>
-            <div class="feature-card">
-                <div class="feature-card-icon icon-cyan">🔧</div>
-                <h3>图片修复</h3>
-                <p>AI智能修复老照片、模糊照片，提升画质、去除噪点、修复破损，让珍贵回忆焕然一新。</p>
+            <div class="why-card">
+                <div class="why-number">02</div>
+                <h3>简洁易用</h3>
+                <p>精心设计的用户界面，无需专业知识，简单几步即可完成创作。降低AI使用门槛，让人人都能成为创作者。</p>
+            </div>
+            <div class="why-card">
+                <div class="why-number">03</div>
+                <h3>功能丰富</h3>
+                <p>集成AI绘画、视频生成、智能对话等10+核心功能，一个应用满足多种创作需求，无需在多个工具间切换。</p>
+            </div>
+            <div class="why-card">
+                <div class="why-number">04</div>
+                <h3>持续更新</h3>
+                <p>紧跟AI技术发展，定期更新功能和模型，不断引入新的创作能力，让您始终体验最前沿的AI技术。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Showcase Section -->
+    <section class="section showcase-section">
+        <div class="section-header">
+            <h2 class="section-title">产品 <span class="highlight">展示</span></h2>
+            <p class="section-subtitle">简洁优雅的界面设计，流畅的操作体验</p>
+        </div>
+        <div class="showcase-container">
+            <div class="showcase-phones">
+                <div class="showcase-phone">
+                    <div class="phone-frame">
+                        <div class="phone-screen-demo">
+                            <div class="demo-header">🏠 首页</div>
+                            <div class="demo-grid">
+                                <div class="demo-item">🎨</div>
+                                <div class="demo-item">🎬</div>
+                                <div class="demo-item">💬</div>
+                                <div class="demo-item">📷</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="phone-label">首页功能入口</p>
+                </div>
+                <div class="showcase-phone featured">
+                    <div class="phone-frame">
+                        <div class="phone-screen-demo">
+                            <div class="demo-header">🎨 AI绘画</div>
+                            <div class="demo-canvas"></div>
+                            <div class="demo-input">输入创意描述...</div>
+                        </div>
+                    </div>
+                    <p class="phone-label">AI绘画创作</p>
+                </div>
+                <div class="showcase-phone">
+                    <div class="phone-frame">
+                        <div class="phone-screen-demo">
+                            <div class="demo-header">💬 AI对话</div>
+                            <div class="demo-chat">
+                                <div class="chat-bubble user">你好</div>
+                                <div class="chat-bubble ai">你好！有什么可以帮您？</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="phone-label">智能对话助手</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coming Soon Section -->
+    <section class="section coming-section">
+        <div class="section-header">
+            <h2 class="section-title">即将 <span class="highlight">推出</span></h2>
+            <p class="section-subtitle">更多精彩功能，敬请期待</p>
+        </div>
+        <div class="coming-grid">
+            <div class="coming-card">
+                <div class="coming-icon">🎵</div>
+                <h3>AI音乐生成</h3>
+                <p>输入描述或心情，AI为您创作独特的背景音乐</p>
+            </div>
+            <div class="coming-card">
+                <div class="coming-icon">🗣️</div>
+                <h3>AI语音克隆</h3>
+                <p>上传声音样本，生成个性化的AI语音</p>
+            </div>
+            <div class="coming-card">
+                <div class="coming-icon">📝</div>
+                <h3>AI长文写作</h3>
+                <p>智能生成文章、报告、故事等长篇内容</p>
+            </div>
+            <div class="coming-card">
+                <div class="coming-icon">🌐</div>
+                <h3>多语言支持</h3>
+                <p>支持更多语言的AI创作和翻译功能</p>
             </div>
         </div>
     </section>
