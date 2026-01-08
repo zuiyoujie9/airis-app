@@ -578,6 +578,18 @@
             flex-direction: column;
         }
 
+        .phone-screen-demo.with-image {
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .phone-screen-demo.with-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
         .demo-header {
             text-align: center;
             font-size: 14px;
@@ -1099,41 +1111,13 @@
         </div>
         <div class="showcase-container">
             <div class="showcase-phones">
-                <div class="showcase-phone">
-                    <div class="phone-frame">
-                        <div class="phone-screen-demo">
-                            <div class="demo-header">🏠 首页</div>
-                            <div class="demo-grid">
-                                <div class="demo-item">🎨</div>
-                                <div class="demo-item">🎬</div>
-                                <div class="demo-item">💬</div>
-                                <div class="demo-item">📷</div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="phone-label">首页功能入口</p>
-                </div>
                 <div class="showcase-phone featured">
                     <div class="phone-frame">
-                        <div class="phone-screen-demo">
-                            <div class="demo-header">🎨 AI绘画</div>
-                            <div class="demo-canvas"></div>
-                            <div class="demo-input">输入创意描述...</div>
+                        <div class="phone-screen-demo with-image">
+                            <img src="screen1.jpg" alt="AIris应用首页截图">
                         </div>
                     </div>
-                    <p class="phone-label">AI绘画创作</p>
-                </div>
-                <div class="showcase-phone">
-                    <div class="phone-frame">
-                        <div class="phone-screen-demo">
-                            <div class="demo-header">💬 AI对话</div>
-                            <div class="demo-chat">
-                                <div class="chat-bubble user">你好</div>
-                                <div class="chat-bubble ai">你好！有什么可以帮您？</div>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="phone-label">智能对话助手</p>
+                    <p class="phone-label">应用首页界面</p>
                 </div>
             </div>
         </div>
